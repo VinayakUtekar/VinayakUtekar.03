@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poopins";
+    box-sizing: border-box;
+}
+body{
+    background : #080808;
+    color: #fff;
+}
+/*---------Home----------*/
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background-image.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;  
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    transition: 0.4s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+/*-------------About Me-----------------*/
+#about{
+    padding: 80px 0px;
+    color: #ababab;
+    /*background-image: url(images/about-backgrond.jpg);*/
+}
+#about .heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight:600;
+    color: #f11515;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 90%;
+    border-radius: 15px;
+    padding-left: 40px;
+    box-shadow: 10px 10px 3px rgb(92, 90, 90);
+}
+.about-col-2{
+    flex-basis: 60%;
+    align-items: center;
+	width: 40%;
+	padding:10px;
+	margin-top: 60px;
+}
+.about-col-2 p{
+	font-size: 20px;
+	text-align: justify;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #fcfbfb;
+    text-shadow:  2px 1px 2px #bea2a2;
+}
+/*-------------Services-----------------*/
+#services{
+    padding: 30px 0;
+}
+#services .heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight:600;
+    color: #f11515;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.2s, transform 0.2s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.services-list div h2{
+    font-size: 26px;
+    font-weight: 500
+    margin-bottom: 20px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #ffffff;
+    color: #000000;
+    transform: translateY(-10px);
+}
+/*-------------------Portfolio---------------------*/
+#portfolio{
+    padding: 50px 0 ;
+}
+#portfolio .heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight:600;
+    color: #f11515;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}

@@ -1,55 +1,140 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
         <title>VinayakUtekar.03</title>
-        <link rel="stylesheet" href="Requirments\CSS\style.css"
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-            }
-            body{
-                background-color: rgb(14, 4, 73);
-                color : white
-                font-family: 'Poppins';
-            }  
-            nav{
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                height: 80px;
-                background-color: rgb(37, 18, 150);
-            }
-            nav ul{
-                display: flex;
-                justify-content: center;
-            }  
-            nav ul li{
-                list-style: none;
-            }
-            .left{
-                font-size: 1.5rem;
-            }
-        </style>
+        <!--CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/f083de9b8e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <div class"left">VinayakUtekar.03</div>
-                <div class"right">
+        <div id="header">
+            <div class="container">
+                <nav>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Skills</li>
-                        <li>Projects</li>
-                        <li>Services</li>
-                        <li>Contact</li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I am Vinayak V. Utekar</h1>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </div> 
+<!-------------------------About-------------------------->
+        <div id="about">
+            <div class="continer">
+                <div class="heading">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user1.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <p>
+                            Welcome to my portfolio website!
+                        </p><br/><br/>
+                        <p>
+                            Hi! I am Vinayak Utekar, a B.E. Computer Engineering undergraduate with 
+                            a strong focus on application development and data analysis. My journey 
+                            in the world of technology has equipped me with a deep understanding of 
+                            these domains and honed my problem-solving skills.Driven by a sincere desire 
+                            to make a positive impact, I am always eagerto lend a helping hand to others, 
+                            whether it's tackling complex challenges or collaborating on innovative projects.
+                        </p><br/>
+                        <p>
+                            In the fast-paced tech industry, I recognize the significance of continuous 
+                            growth and adaptability. As a result, I am committed to constant self-improvement 
+                            and embrace every opportunity to learn new skills, ensuring that I remain at the 
+                            cutting edge of advancements in the field.
+                        </p><br/>
+                        <p>
+                            I invite you to explore my portfolio and discover the exciting projects and 
+                            experiences that define my journey. Let's connect and explore the possibilities 
+                            of technology together!
+                        </p><br/>
+                        <p> 
+                            Passionate in Software development, Blockchain and Cybersecurity Technologies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+<!-------------------------Services-------------------------->
+        <div id="services">
+            <div class="container">
+                <div class="heading">
+                    <h1>My Services</h1>
+                </div>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>As a skilled web developer, I offer top-notch web development services that 
+                            elevate your online presence. From creating captivating designs to implementing 
+                            cutting-edge functionalities, I'm dedicated to crafting websites that leave a lasting 
+                            impression. Let's collaborate and turn your ideas into a stunning reality. Reach 
+                            out to me today, and let's build something extraordinary together!
+                        </p>
+                        <a href="#">Learn More..</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-android"></i>
+                        <h2>Android Development</h2>
+                        <p>As a skilled Android developer, I specialize in crafting dynamic and user-friendly 
+                            mobile applications. Whether you need a sleek business app or an interactive gaming 
+                            experience, I have the expertise to bring your Android app idea to life. Let's work 
+                            together to build an innovative and engaging mobile solution that delights your users 
+                            and meets your business goals. Get in touch with me today, and let's create something 
+                            exceptional for the Android platform!</p>
+                        <a href="#">Learn More..</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Data Analysis</h2>
+                        <p>As a skilled developer, I am well-versed in analyzing and interpreting data to extract 
+                            valuable insights. Whether you need in-depth reports, data visualization, or predictive 
+                            modeling, I've got you covered. Let's unlock the potential of your data, drive informed 
+                            decisions, and take your business to new heights. Contact me now, and let's embark on 
+                            a data-driven journey together!
+                        </p>
+                        <a href="#">Learn More..</a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+<!-------------------------Portfolio-------------------------->
+        <div id="portfolio">
+            <div class="container">
+                <div class="heading">
+                    <h1>Projects</h1>
+                </div>
+                <div class="projects">
+                    <div class="project">
+                        <img src="images/snake&ladder.jpg">
+                    </div>
+                    <div class="project">
+                        <img src="images/sms.jpg">
+                    </div>
+                    <div class="project">
+                        <img src="images/todo.jpg">
+                    </div>
+                    <div class="project">
+                        <img src="images/encryption&decryption.jpg">
+                    </div>
+                    <div class="project">
+                        <img src="images/ems.jpg">
+                    </div>
+                    <div class="project">
+                        <img src="images/Ani-Vertor.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
-    </html>
+</html>
