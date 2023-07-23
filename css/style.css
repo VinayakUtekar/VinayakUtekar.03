@@ -8,7 +8,7 @@ body{
     background : #080808;
     color: #fff;
 }
-/*---------Home----------*/
+/*----------------------------------Home----------------------------------*/
 #header{
     width: 100%;
     height: 100vh;
@@ -60,7 +60,7 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff004f;
 }
-/*-------------About Me-----------------*/
+/*----------------------------------About Me----------------------------------*/
 #about{
     padding: 80px 0px;
     color: #ababab;
@@ -100,9 +100,48 @@ nav ul li a:hover::after{
 	color: #fcfbfb;
     text-shadow:  2px 1px 2px #bea2a2;
 }
-/*-------------Services-----------------*/
+/*----------------------------------Skills----------------------------------*/
+#skills{
+    background-image: url(../images/about-backgrond.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+#skills .heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight:600;
+    color: #f11515;
+}
+.container .skills-list {
+	margin-top: 5px;
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+}
+.container .skills-list img{
+    align-items: center;
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 20px;
+	margin: 30px auto;
+	box-shadow: 0px 0px 6px 3px gray;
+}
+
+.container .skills-list img:hover{
+	box-shadow: 0px 0px 6px 7px gray;
+	transform: scale(1.1,1.1);
+	transition: all .2s ease-out;
+}
+/*----------------------------------Services----------------------------------*/
 #services{
     padding: 30px 0;
+    background-image: url(../images/services-backgrond.jpg); 
+    background-size: cover;
+    background-position: center;
 }
 #services .heading{
     text-align: center;
@@ -139,15 +178,19 @@ nav ul li a:hover::after{
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
+
 }
 .services-list div:hover{
     background: #ffffff;
     color: #000000;
     transform: translateY(-10px);
 }
-/*-------------------Portfolio---------------------*/
+/*----------------------------------Portfolio----------------------------------*/
 #portfolio{
     padding: 50px 0 ;
+    background-image: url(../images/projects-backgrond.jpg); 
+    background-size: cover;
+    background-position: center;
 }
 #portfolio .heading{
     text-align: center;
@@ -168,6 +211,100 @@ nav ul li a:hover::after{
 }
 .project img{
     width: 100%;
-    border-radius: 10px;
     display: block;
+    transition: transform 0.2s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #ff004f);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 100%;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.projects .project .layer .website-link{
+	background-color: #fff;
+	color: #000;
+	text-decoration: none;
+	padding: 8px;
+	margin: 10px;
+	width: fit-content;
+}
+.projects .project .layer .website-link:hover{
+	background-color: #f4af1b;
+	transition: all .1s ease-in;
+	color: #fff;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.project:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color : #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #ff004f;
+}
+/*----------------------------------Services----------------------------------*/
+#contact{
+    padding: 50px 0 ;
+    background-image: url(../images/contact-backgrond.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+#contact .heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight:600;
+    color: #f11515;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+.social-icons a:hover{
+    
 }
