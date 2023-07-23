@@ -101,7 +101,7 @@ nav ul li a:hover::after{
 	text-align: justify;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	color: #fcfbfb;
-    text-shadow:  2px 1px 2px #776868;
+    text-shadow:  2px 1px 2px #030303;
 }
 /*----------------------------------Skills----------------------------------*/
 #skills{
@@ -421,7 +421,7 @@ nav .fas{
         text-align: justify;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color: #fcfbfb;
-        text-shadow:  2px 1px 2px #4d4949;
+        text-shadow:  2px 1px 2px #030303;
     }
     .contact-left{
         flex-basis: 100%;
