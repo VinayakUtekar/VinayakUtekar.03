@@ -101,7 +101,7 @@ nav ul li a:hover::after{
 	text-align: justify;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	color: #fcfbfb;
-    text-shadow:  2px 1px 2px #bea2a2;
+    text-shadow:  2px 1px 2px #776868;
 }
 /*----------------------------------Skills----------------------------------*/
 #skills{
@@ -133,7 +133,6 @@ nav ul li a:hover::after{
 	margin: 30px auto;
 	box-shadow: 0px 0px 6px 3px gray;
 }
-
 .container .skills-list img:hover{
 	box-shadow: 0px 0px 6px 7px gray;
 	transform: scale(1.1,1.1);
@@ -148,7 +147,7 @@ nav ul li a:hover::after{
 }
 #services .heading{
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
     font-weight:600;
     color: #f11515;
 }
@@ -279,7 +278,7 @@ nav ul li a:hover::after{
     background-position: center;
 }
 #contact .heading{
-    font-size: 35px;
+    font-size: 25px;
     font-weight:600;
     color: #fff;
 }
@@ -350,7 +349,7 @@ form .btn2{
 nav .fas{
     display: none;
 }
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
     #header{
         background-color: #fff;
         background-image: url(../images/phone-background-image.jpg)
@@ -387,8 +386,26 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
+    .container .skills-list {
+        margin-top: 5px;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .container .skills-list img {
+		width: 110px;
+		height: 110px;
+	}
     .about-col-1,{
         flex-basis: 100%;
+    }
+    .about-col-1 img{
+        width: 320px;
+        border-radius: 15px;
+        padding-left: 40px;
+        box-shadow: 10px 10px 3px rgb(92, 90, 90);
     }
     .about-col-2{
         flex-basis: 100%;
@@ -399,11 +416,22 @@ nav .fas{
     .about-col-2{
         font-size: 100%;
     }
+    .about-col-2 p{
+        font-size: 14px;
+        text-align: justify;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #fcfbfb;
+        text-shadow:  2px 1px 2px #4d4949;
+    }
     .contact-left{
         flex-basis: 100%;
     } 
     .contact-right{
         flex-basis: 100%;
+    }
+    .contact-left p{
+        margin-top: 30px;
+        font-size: 18px;
     }
     .copyright{
         font-size: 14px;
