@@ -350,7 +350,7 @@ form .btn2{
 nav .fas{
     display: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     #header{
         background-color: #fff;
         background-image: url(../images/phone-background-image.jpg)
