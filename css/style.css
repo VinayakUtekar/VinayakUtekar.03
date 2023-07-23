@@ -387,7 +387,10 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
-    .about-col-1,.about-col-2{
+    .about-col-1,{
+        flex-basis: 100%;
+    }
+    .about-col-2{
         flex-basis: 100%;
     }
     .about-col-1{
@@ -396,7 +399,10 @@ nav .fas{
     .about-col-2{
         font-size: 100%;
     }
-    .contact-left, .contact-right{
+    .contact-left{
+        flex-basis: 100%;
+    } 
+    .contact-right{
         flex-basis: 100%;
     }
     .copyright{
