@@ -4,6 +4,9 @@
     font-family: "Poopins";
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background : #080808;
     color: #fff;
@@ -268,18 +271,17 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff004f;
 }
-/*----------------------------------Services----------------------------------*/
+/*----------------------------------Contact----------------------------------*/
 #contact{
-    padding: 50px 0 ;
+    padding: 80px 0 ;
     background-image: url(../images/contact-backgrond.jpg); 
     background-size: cover;
     background-position: center;
 }
 #contact .heading{
-    text-align: center;
     font-size: 35px;
     font-weight:600;
-    color: #f11515;
+    color: #fff;
 }
 .contact-left{
     flex-basis: 35%;
@@ -289,6 +291,7 @@ nav ul li a:hover::after{
 }
 .contact-left p{
     margin-top: 30px;
+    font-size: 25px;
 }
 .contact-left p i{
     color: #ff004f;
@@ -304,7 +307,104 @@ nav ul li a:hover::after{
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
+    transition: transfer 0.5s;
 }
 .social-icons a:hover{
-    
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*----------------------------------Copyright----------------------------------*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: fixed #262626;
+    font-weight: 300;
+    margin-top: 30px;
+}
+/*----------------------------------Responsive----------------------------------*/
+nav .fas{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    #header{
+        background-color: #fff;
+        background-image: url(../images/phone-background-image.jpg)
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding: 50px;
+        z-index: 2;
+        transition: right 0.5;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 100%;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }

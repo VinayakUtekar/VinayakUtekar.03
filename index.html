@@ -4,6 +4,7 @@
         <title>VinayakUtekar.03</title>
         <!--CSS-->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="script" href="js/main.js">
         <script src="https://kit.fontawesome.com/f083de9b8e.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -12,14 +13,16 @@
             <div class="container">
                 <nav>
                     <h1 class="heading">VinayakUtekar.03</h1>
-                    <ul>
+                    <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
                     <p>Software Developer</p>
@@ -217,32 +220,65 @@
 <!-------------------------Contact-------------------------->
         <div id="contact">
             <div class="container">
-                <div class="heading">
-                    <h1>Contact</h1>
-                </div>
                 <div class="row">
                     <div class="contact-left">
+                        <div class="heading">
+                            <h1>Contact Me</h1>
+                        </div>
                         <p><i class="fa-solid fa-paper-plane"></i>vinayakutekar15@gmail.com</p>
                         <p><i class="fa-solid fa-square-phone"></i>+91 9930515765</p>
                         <div class="social-icons">
-                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-square-github"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/vinayak-vikas-utekar-5185ab222"><i class="fa-brands fa-linkedin"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/vinayakv.utekar"><i class="fa-brands fa-facebook"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/vinayakvutekar/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a target="_blank" href="https://twitter.com/Vinayakvutekar"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a target="_blank" href="https://github.com/VinayakUtekar"><i class="fa-brands fa-square-github"></i></a>
                         </div>
+                        <a href="pdf/Vinayak_Utekar_CV.pdf" download class="btn btn2">Download CV</a>
                     </div>
                     <div class="contact-right">
-                        <form>
+                        <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your name" required>
-                            <input type="email" name="email" placeholder="Your email" required>
-                            <input  type="number" name="number" placeholder="Your Contact no.">
-                            <textarea name="Meaasge" rows="6" placeholder="Your Message" required></textarea>
-                            <button type="submit">Submit</button>
+                            <input type="email" name="Email" placeholder="Your email" required>
+                            <input  type="number" name="Ph-No" placeholder="Your Contact no.">
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
                         </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
         </div>
+<!-------------------------Copywrite-------------------------->
+        <div class="copyright">
+            <p>Copyright @ 2023 Vinayak Utekar, All rights reserved</p>
+        </div>
+        <script>
+            var sidemenu = document.getElementById("sidemenu")
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz3lVtL--ssEDJipwAvBxVyo63mm5Q1xGZ9g2BII52c7OPhx1ut1qRKuV0-TueCQepIaA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
     </body>
 </html>
