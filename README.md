@@ -20,3 +20,4 @@ Deployment Platform:
 This portfolio website is hosted on netlify.com, a robust and reliable platform for deploying modern web applications. Netlify's continuous deployment ensures that any updates or changes to the website are automatically deployed, keeping the site up-to-date and easily accessible to visitors.
 
 Overall, my portfolio website represents my professional identity and achievements, providing an immersive experience for those interested in learning more about me and my work. Whether you're a potential employer, collaborator, or just curious about my projects, this website offers a glimpse into my skills and passion for creating meaningful digital experiences. Thank you for visiting, and feel free to reach out for any inquiries or opportunities!
+
